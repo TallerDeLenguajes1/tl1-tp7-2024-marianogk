@@ -2,29 +2,28 @@ namespace EspacioCalculadora;
 
 public class Calculadora
 {
-    private double numero;
+    private double dato;
 
-    public Calculadora(valorInicial)
+    public Calculadora(int valorInicial)
     {
-        numero=valorInicial;
+        dato=valorInicial;
     }
 
-
     public void Sumar(double termino) {
-        numero += termino
+        dato += termino;
     }  
 
     public void Restar(double termino) {
-        numero -= termino
+        dato -= termino;
     }
 
     public void Multiplicar(double termino) {
-        numero *= termino
+        dato *= termino;
     }
 
     public void Dividir(double termino) {
-        numero /= termino
+        dato /= termino;
     }           
 
-    public double resultado {get=> n1;}
+    public double Resultado {get=>dato;}
 }

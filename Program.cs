@@ -1,11 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using namespace Calculadora;
+using EspacioCalculadora;
 
-Calculadora MiCalculadora = new Calculadora(0);
+Calculadora miCalculadora = new Calculadora(0);
 
-double resultado = micalculadora.resultado;
+double resultado = miCalculadora.Resultado;
 
+miCalculadora.Sumar(10);
+miCalculadora.Restar(5);
+miCalculadora.Multiplicar(6);
+miCalculadora.Dividir(3);
 
-
-Console.WriteLine(""+resultado);
+Console.WriteLine("Suma: "+resultado);
