@@ -6,24 +6,33 @@ public class Calculadora
 
     public Calculadora(int valorInicial)
     {
-        dato=valorInicial;
+        dato = valorInicial;
     }
 
-    public void Sumar(double termino) {
+    public void Sumar(double termino)
+    {
         dato += termino;
-    }  
+    }
 
-    public void Restar(double termino) {
+    public void Restar(double termino)
+    {
         dato -= termino;
     }
 
-    public void Multiplicar(double termino) {
+    public void Multiplicar(double termino)
+    {
         dato *= termino;
     }
 
-    public void Dividir(double termino) {
+    public void Dividir(double termino)
+    {
         dato /= termino;
-    }           
+    }
 
-    public double Resultado {get=>dato;}
+    public void Limpiar()
+    {
+        dato = 0;
+    }
+
+    public double Resultado { get => dato; }
 }
